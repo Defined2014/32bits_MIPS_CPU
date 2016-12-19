@@ -1,0 +1,104 @@
+m255
+K3
+13
+cModel Technology
+Z0 dD:\modeltech_6.5\examples
+T_opt
+Z1 VHLPAfPL::9HJ5@nYzBW5R2
+Z2 04 8 4 work ALU_tb_v fast 0
+Z3 =1-0c826841d028-58331bee-398-1460
+Z4 o-quiet -auto_acc_if_foreign -work work
+Z5 n@_opt
+Z6 OE;O;6.5;42
+vadder_32bits
+Z7 IJAWldIEj9zIPE9nzbNGE<2
+Z8 VH3MfAaUBUHMniOHlZdcI;0
+Z9 dE:\Verilog\lab28\PipelineCPU\SIM\ALU
+Z10 w1477909395
+Z11 8E:/Verilog/lab28/PipelineCPU/SRC/adder_32bits.v
+Z12 FE:/Verilog/lab28/PipelineCPU/SRC/adder_32bits.v
+L0 21
+Z13 OE;L;6.5;42
+r1
+31
+Z14 !s102 -nocovercells
+Z15 o-work work -nocovercells -L mtiAvm -L mtiOvm -L mtiUPF
+Z16 !s100 EaEkm`6>oiL>Nk3Wb=^L63
+!s85 0
+vadder_4bits
+Z17 IODF5TAO1ezQYg4S:RQD>g3
+Z18 VRIOd4YzBVIKIHabCV7aQM3
+R9
+R10
+R11
+R12
+L0 45
+R13
+r1
+31
+R14
+R15
+Z19 !s100 E9Y[1`_4_`F4ED31?DKCQ0
+!s85 0
+vadder_select
+Z20 IaTnBhK`FXdGiLk><7Q2OV0
+Z21 Vf:YNL3Rf8J:e[nPzhR_1?2
+R9
+R10
+R11
+R12
+L0 61
+R13
+r1
+31
+R14
+R15
+Z22 !s100 fn=Jdk9[AWoP3TWgES6^X3
+!s85 0
+vALU
+Z23 I3Q[Klh]8m?Zicec`Ik_<?3
+Z24 VaV^i_k8i[S<RQoIRA9CmA3
+R9
+Z25 w1479743860
+Z26 8E:/Verilog/lab28/PipelineCPU/SRC/ALU.v
+Z27 FE:/Verilog/lab28/PipelineCPU/SRC/ALU.v
+L0 15
+R13
+r1
+31
+R14
+R15
+Z28 n@a@l@u
+Z29 !s100 h33Tja]cJdOe@fA2>OTB00
+!s85 0
+vALU_tb_v
+Z30 I[?7L=g_`9TSj>L:JXjUaN3
+Z31 Vn8E^2mJkklB5[VY2iKST@2
+R9
+Z32 w1479733399
+Z33 8E:/Verilog/lab28/PipelineCPU/SIM/ALU/ALU_tb.v
+Z34 FE:/Verilog/lab28/PipelineCPU/SIM/ALU/ALU_tb.v
+L0 25
+R13
+r1
+31
+R14
+R15
+Z35 n@a@l@u_tb_v
+Z36 !s100 d6HGcGm_1<;nz`Aj`lzDE0
+!s85 0
+vmux_2to1
+Z37 I[NKP@e@T=CAU`8BU_zRM[3
+Z38 VElZbmR28f1_lf?iYd8HGS0
+R9
+R10
+R11
+R12
+L0 38
+R13
+r1
+31
+R14
+R15
+Z39 !s100 d0L=l@d?`3X4IdCf4<5`Q2
+!s85 0

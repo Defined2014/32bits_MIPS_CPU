@@ -1,0 +1,44 @@
+m255
+K3
+13
+cModel Technology
+Z0 dE:\Verilog\lab28\PipelineCPU\SRC
+T_opt
+VJWh9cQBW`<4S2^dj^oRKC0
+04 6 4 work Decode fast 0
+=1-0c826841d028-58455913-102-22d4
+o-quiet -auto_acc_if_foreign -work work
+n@_opt
+OE;O;6.5;42
+vDecode
+VZljK8RR7o2iTDaBIhX7e03
+r1
+!s85 0
+31
+IlQ]gNX?jZT:mRRK:EgOfV0
+Z1 dE:\Verilog\lab28\PipelineCPU\SIM\Decode
+w1480939550
+8E:/Verilog/lab28/PipelineCPU/SRC/Decode.v
+FE:/Verilog/lab28/PipelineCPU/SRC/Decode.v
+L0 13
+Z2 OE;L;6.5;42
+Z3 !s102 -nocovercells
+Z4 o-work work -nocovercells -L mtiAvm -L mtiOvm -L mtiUPF
+n@decode
+!s100 gSMg=]BL9@jII4a@emNQ11
+vDecode_tb_v
+VNBQjZaeFV?6o2QInj[zFQ2
+r1
+31
+ISo]e=mJ0nz>6]NzhMhLIn3
+R1
+w1473489780
+8E:/Verilog/lab28/PipelineCPU/SIM/Decode/Decode_tb.v
+FE:/Verilog/lab28/PipelineCPU/SIM/Decode/Decode_tb.v
+L0 25
+R2
+R3
+R4
+n@decode_tb_v
+!s85 0
+!s100 XPCdoH;APA_6S=K:XG_872

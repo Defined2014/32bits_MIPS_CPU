@@ -1,0 +1,15 @@
+E:/Verilog/lab28/PipelineCPU/SRC/Decode.v {1 {vlog -work work -vopt -nocovercells E:/Verilog/lab28/PipelineCPU/SRC/Decode.v
+Model Technology ModelSim SE vlog 6.5 Compiler 2009.01 Jan 22 2009
+-- Compiling module Decode
+
+Top level modules:
+	Decode
+
+} {} {}} E:/Verilog/lab28/PipelineCPU/SIM/Decode/Decode_tb.v {1 {vlog -work work -vopt -nocovercells E:/Verilog/lab28/PipelineCPU/SIM/Decode/Decode_tb.v
+Model Technology ModelSim SE vlog 6.5 Compiler 2009.01 Jan 22 2009
+-- Compiling module Decode_tb_v
+
+Top level modules:
+	Decode_tb_v
+
+} {} {}}
