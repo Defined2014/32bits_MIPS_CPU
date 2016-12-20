@@ -1,0 +1,46 @@
+E:/Verilog/lab28/PipelineCPU/32bits_MIPS_CPU/SRC/adder_32bits.v {1 {vlog -work work -novopt -nocovercells E:/Verilog/lab28/PipelineCPU/32bits_MIPS_CPU/SRC/adder_32bits.v
+Model Technology ModelSim SE vlog 6.5 Compiler 2009.01 Jan 22 2009
+-- Compiling module adder_32bits
+-- Compiling module mux_2to1
+-- Compiling module adder_4bits
+-- Compiling module adder_select
+
+Top level modules:
+	adder_32bits
+
+} {} {}} E:/Verilog/lab28/PipelineCPU/32bits_MIPS_CPU/SIM/ID/ID_tb.v {1 {vlog -work work -novopt -nocovercells E:/Verilog/lab28/PipelineCPU/32bits_MIPS_CPU/SIM/ID/ID_tb.v
+Model Technology ModelSim SE vlog 6.5 Compiler 2009.01 Jan 22 2009
+-- Compiling module ID_tb_v
+
+Top level modules:
+	ID_tb_v
+
+} {} {}} E:/Verilog/lab28/PipelineCPU/32bits_MIPS_CPU/SRC/Decode.v {1 {vlog -work work -novopt -nocovercells E:/Verilog/lab28/PipelineCPU/32bits_MIPS_CPU/SRC/Decode.v
+Model Technology ModelSim SE vlog 6.5 Compiler 2009.01 Jan 22 2009
+-- Compiling module Decode
+
+Top level modules:
+	Decode
+
+} {} {}} E:/Verilog/lab28/PipelineCPU/32bits_MIPS_CPU/SRC/Registers.v {1 {vlog -work work -novopt -nocovercells E:/Verilog/lab28/PipelineCPU/32bits_MIPS_CPU/SRC/Registers.v
+Model Technology ModelSim SE vlog 6.5 Compiler 2009.01 Jan 22 2009
+-- Compiling module Registers
+
+Top level modules:
+	Registers
+
+} {} {}} E:/Verilog/lab28/PipelineCPU/32bits_MIPS_CPU/SRC/ID.v {1 {vlog -work work -novopt -nocovercells E:/Verilog/lab28/PipelineCPU/32bits_MIPS_CPU/SRC/ID.v
+Model Technology ModelSim SE vlog 6.5 Compiler 2009.01 Jan 22 2009
+-- Compiling module ID
+
+Top level modules:
+	ID
+
+} {} {}} E:/Verilog/lab28/PipelineCPU/32bits_MIPS_CPU/SIM/Decode/Decode_tb.v {1 {vlog -work work -novopt -nocovercells E:/Verilog/lab28/PipelineCPU/32bits_MIPS_CPU/SIM/Decode/Decode_tb.v
+Model Technology ModelSim SE vlog 6.5 Compiler 2009.01 Jan 22 2009
+-- Compiling module Decode_tb_v
+
+Top level modules:
+	Decode_tb_v
+
+} {} {}}

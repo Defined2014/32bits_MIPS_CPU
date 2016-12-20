@@ -58,16 +58,23 @@ module EX(RegDst_ex, ALUCode_ex, ALUSrcA_ex, ALUSrcB_ex, Imm_ex, Sa_ex, RsAddr_e
   reg [31:0] A,B;
   
   always @(*) begin
-    if( !ForwardA[0] && !ForwardA[1]) A=RsData_ex;
-    else if( ForwardA[0] && !ForwardA[1] )  A=RegWriteData_wb;
-    else if( !ForwardA[0] && ForwardA[1] ) A=ALUResult_mem;
-    else A=31'b0;
-      
-    if( !ForwardB[0] && !ForwardB[1]) B=RtData_ex;
-    else if( ForwardB[0] && !ForwardB[1] )  B=RegWriteData_wb;
-    else if( !ForwardB[0] && ForwardB[1] ) B=ALUResult_mem;
-    else B=31'b0;
+    case(ForwardA)
+      2'b 00: A<=RsData_ex;
+      2'b 01: A<=RegWriteData_wb;
+      2'b 10: A<=RegWriteData_wb;
+      default:A<=31'b0;
+    endcase
   end
+  
+  always @(*) begin
+    case(ForwardB)
+      2'b 00: B<=RtData_ex;
+      2'b 01: B<=RegWriteData_wb;
+      2'b 10: B<=RegWriteData_wb;
+      default:B<=31'b0;
+    endcase
+  end
+
 
 //MUX for ALU_A
   assign ALU_A= ALUSrcA_ex ? Sa_ex : A ;
@@ -91,6 +98,7 @@ module EX(RegDst_ex, ALUCode_ex, ALUSrcA_ex, ALUSrcB_ex, Imm_ex, Sa_ex, RsAddr_e
 	 
 //MUX for RegWriteAddr_ex
   assign RegWriteAddr_ex= RegDst_ex ? RdAddr_ex : RtAddr_ex;
+  assign MemWriteData_ex= B;
 
 
 
