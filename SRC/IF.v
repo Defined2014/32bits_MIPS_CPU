@@ -31,20 +31,40 @@ module IF(clk, reset, Z, J, JR, PC_IFWrite, JumpAddr,
     input [31:0] BranchAddr;
     output [31:0] Instruction_if;
     output [31:0] PC,NextPC_if;
+    
 
 // MUX for PC
-    reg[31:0] PC_in;
-
-
-
-	
-//PC REG
-
+    reg[31:0] PC_in,PC_cp;
+    assign PC=PC_cp;
+    wire[2:0] PCSource;
+    assign PCSource={JR,J,Z};
+    always @(posedge clk) begin
+      if(!reset)
+        begin
+          case(PCSource)
+            3'b000 :PC_in<=NextPC_if;
+            3'b001 :PC_in<=BranchAddr;
+            3'b010 :PC_in<=JumpAddr;
+            3'b100 :PC_in<=JrAddr;
+            default:PC_in<=0;
+          endcase
+          if(PC_IFWrite)
+            PC_cp<=PC_in;
+          else
+            PC_cp<=PC;
+        end
+      else
+      begin
+        PC_in=0;
+        PC_cp=0;
+      end
+    end
 
      
 //Adder for NextPC
-
-
+    wire co,ci;
+    assign ci=0;
+    adder_32bits add(.a(PC),.b(4),.ci(ci),.s(NextPC_if),.co(co));
   	
 	  
 //ROM

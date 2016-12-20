@@ -2,119 +2,112 @@ m255
 K3
 13
 cModel Technology
-Z0 dD:\modeltech_6.5\examples
-T_opt
-VHLPAfPL::9HJ5@nYzBW5R2
-04 8 4 work ALU_tb_v fast 0
-=1-0c826841d028-58331bee-398-1460
-o-quiet -auto_acc_if_foreign -work work
-n@_opt
-OE;O;6.5;42
+dD:\modeltech_6.5\examples
 vadder_32bits
-VH3MfAaUBUHMniOHlZdcI;0
-r1
-31
-IJAWldIEj9zIPE9nzbNGE<2
-Z1 dE:\Verilog\lab28\PipelineCPU\SIM\ALU
-Z2 w1477909395
-Z3 8E:/Verilog/lab28/PipelineCPU/SRC/adder_32bits.v
-Z4 FE:/Verilog/lab28/PipelineCPU/SRC/adder_32bits.v
-L0 21
-Z5 OE;L;6.5;42
-Z6 !s102 -nocovercells
-Z7 o-work work -nocovercells -L mtiAvm -L mtiOvm -L mtiUPF
-!s85 0
 !s100 EaEkm`6>oiL>Nk3Wb=^L63
+IJAWldIEj9zIPE9nzbNGE<2
+VH3MfAaUBUHMniOHlZdcI;0
+Z0 dE:\Verilog\lab28\PipelineCPU\32bits_MIPS_CPU\SIM\ALU
+Z1 w1482134626
+Z2 8E:/Verilog/lab28/PipelineCPU/32bits_MIPS_CPU/SRC/adder_32bits.v
+Z3 FE:/Verilog/lab28/PipelineCPU/32bits_MIPS_CPU/SRC/adder_32bits.v
+L0 21
+Z4 OE;L;6.5;42
+r1
+!s85 0
+31
+Z5 !s102 -nocovercells
+Z6 o-work work -nocovercells -L mtiAvm -L mtiOvm -L mtiUPF
 vadder_4bits
-VRIOd4YzBVIKIHabCV7aQM3
-r1
-31
-IODF5TAO1ezQYg4S:RQD>g3
-R1
-R2
-R3
-R4
-L0 45
-R5
-R6
-R7
-!s85 0
 !s100 E9Y[1`_4_`F4ED31?DKCQ0
+IODF5TAO1ezQYg4S:RQD>g3
+VRIOd4YzBVIKIHabCV7aQM3
+Z7 dE:\Verilog\lab28\PipelineCPU\32bits_MIPS_CPU\SIM\ALU
+R1
+R2
+R3
+L0 45
+R4
+r1
+!s85 0
+31
+R5
+R6
 vadder_select
-Vf:YNL3Rf8J:e[nPzhR_1?2
-r1
-31
-IaTnBhK`FXdGiLk><7Q2OV0
-R1
-R2
-R3
-R4
-L0 61
-R5
-R6
-R7
-!s85 0
 !s100 fn=Jdk9[AWoP3TWgES6^X3
-vALU
-VaV^i_k8i[S<RQoIRA9CmA3
-r1
-31
-IA?l=TZAj3aQKRXClOfblU0
-R1
-Z8 w1479822169
-Z9 8E:/Verilog/lab28/PipelineCPU/SRC/ALU.v
-Z10 FE:/Verilog/lab28/PipelineCPU/SRC/ALU.v
-L0 15
-R5
-R6
+IaTnBhK`FXdGiLk><7Q2OV0
+Vf:YNL3Rf8J:e[nPzhR_1?2
 R7
-n@a@l@u
-!s85 0
-!s100 1Ri>k4I13Tf?20C;eNR@l0
-vALU_tb_v
-Vn8E^2mJkklB5[VY2iKST@2
-r1
-31
-ID@QDel;aSWHITb@FD4?zA0
-R1
-w1479822034
-8E:/Verilog/lab28/PipelineCPU/SIM/ALU/ALU_tb.v
-FE:/Verilog/lab28/PipelineCPU/SIM/ALU/ALU_tb.v
-L0 25
-R5
-R6
-R7
-n@a@l@u_tb_v
-!s85 0
-!s100 :8_I@nS7[49gzB[?1@AIm3
-vmux_2to1
-VElZbmR28f1_lf?iYd8HGS0
-r1
-31
-I[NKP@e@T=CAU`8BU_zRM[3
 R1
 R2
 R3
+L0 61
 R4
-L0 38
-R5
-R6
-R7
-!s85 0
-!s100 d0L=l@d?`3X4IdCf4<5`Q2
-vselect_Binvert
-Vda;4>7GLZET<cKIC8V0Z[2
 r1
 !s85 0
 31
-I<OezmZ2Me`05V?mXA2a;S3
+R5
+R6
+vALU
+Im:FJz=J<[Kb6FBfJPgkHR3
+VaV^i_k8i[S<RQoIRA9CmA3
+R7
+Z8 w1482147747
+Z9 8E:/Verilog/lab28/PipelineCPU/32bits_MIPS_CPU/SRC/ALU.v
+Z10 FE:/Verilog/lab28/PipelineCPU/32bits_MIPS_CPU/SRC/ALU.v
+L0 15
+R4
+r1
+31
+R5
+R6
+n@a@l@u
+!s100 Vk?=NT[>aBMQTSm6[KE113
+!s85 0
+vALU_tb_v
+ID@QDel;aSWHITb@FD4?zA0
+Vn8E^2mJkklB5[VY2iKST@2
+R7
+w1479822034
+8E:/Verilog/lab28/PipelineCPU/32bits_MIPS_CPU/SIM/ALU/ALU_tb.v
+FE:/Verilog/lab28/PipelineCPU/32bits_MIPS_CPU/SIM/ALU/ALU_tb.v
+L0 25
+R4
+r1
+31
+R5
+R6
+n@a@l@u_tb_v
+!s100 :8_I@nS7[49gzB[?1@AIm3
+!s85 0
+vmux_2to1
+!s100 d0L=l@d?`3X4IdCf4<5`Q2
+I[NKP@e@T=CAU`8BU_zRM[3
+VElZbmR28f1_lf?iYd8HGS0
+R7
 R1
+R2
+R3
+L0 38
+R4
+r1
+!s85 0
+31
+R5
+R6
+vselect_Binvert
+ILN6Qz;RF3XfNP0h<MYYT40
+Vda;4>7GLZET<cKIC8V0Z[2
+R7
 R8
 R9
 R10
-L0 114
+L0 113
+R4
+r1
+31
 R5
 R6
-R7
 nselect_@binvert
-!s100 2Qb_==lY1eC=WO6DS`ScH2
+!s100 CQdWoOS0GQjW933aE_1JB0
+!s85 0

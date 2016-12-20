@@ -234,7 +234,7 @@ Instruction
 	   else if(SRA) ALUC=alu_sra;
 	   else if(SLT) ALUC=alu_slt;
 	   else if(SLTU) ALUC=alu_sltu;
-	   else ALUC=5'bxxxxx;
+	   else ALUC=5'b00000;
 	 
 	 end
 	

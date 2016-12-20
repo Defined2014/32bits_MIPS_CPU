@@ -65,7 +65,7 @@ module ALU (
 	 parameter	 alu_slt=  5'b10011;
    parameter	 alu_sltu= 5'b10100;
    
-   
+   reg signed [31:0] B_reg;
    
 	always @(*) begin
 	  if(Binvert===0)
@@ -92,10 +92,14 @@ module ALU (
       alu_bltz: overflow=A[31];
 		  alu_sll: Result=B<<A;
 		  alu_srl: Result=B>>A;
-		  alu_sra: Result=B>>>A;
+		  alu_sra: Result=B_reg>>>A;
 		  alu_slt: Result=(A[31]&&(~B[31]))||((A[31]~^B[31])&&sum[31]);
 		  alu_sltu: Result=((~A[31])&&B[31])||((A[31]~^B[31])&&sum[31]);
-		  default: Result=32'b0; 
+		  default: 
+		  begin
+		  Result=32'b0;
+		  overflow=0;
+		  end 
 		endcase
 	end
    

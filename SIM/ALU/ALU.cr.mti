@@ -1,11 +1,4 @@
-E:/Verilog/lab28/PipelineCPU/SIM/ALU/ALU_tb.v {1 {vlog -work work -vopt -nocovercells E:/Verilog/lab28/PipelineCPU/SIM/ALU/ALU_tb.v
-Model Technology ModelSim SE vlog 6.5 Compiler 2009.01 Jan 22 2009
--- Compiling module ALU_tb_v
-
-Top level modules:
-	ALU_tb_v
-
-} {} {}} E:/Verilog/lab28/PipelineCPU/SRC/ALU.v {1 {vlog -work work -vopt -nocovercells E:/Verilog/lab28/PipelineCPU/SRC/ALU.v
+E:/Verilog/lab28/PipelineCPU/32bits_MIPS_CPU/SRC/ALU.v {1 {vlog -work work -novopt -nocovercells E:/Verilog/lab28/PipelineCPU/32bits_MIPS_CPU/SRC/ALU.v
 Model Technology ModelSim SE vlog 6.5 Compiler 2009.01 Jan 22 2009
 -- Compiling module ALU
 -- Compiling module select_Binvert
@@ -13,7 +6,7 @@ Model Technology ModelSim SE vlog 6.5 Compiler 2009.01 Jan 22 2009
 Top level modules:
 	ALU
 
-} {} {}} E:/Verilog/lab28/PipelineCPU/SRC/adder_32bits.v {1 {vlog -work work -vopt -nocovercells E:/Verilog/lab28/PipelineCPU/SRC/adder_32bits.v
+} {} {}} E:/Verilog/lab28/PipelineCPU/32bits_MIPS_CPU/SRC/adder_32bits.v {1 {vlog -work work -novopt -nocovercells E:/Verilog/lab28/PipelineCPU/32bits_MIPS_CPU/SRC/adder_32bits.v
 Model Technology ModelSim SE vlog 6.5 Compiler 2009.01 Jan 22 2009
 -- Compiling module adder_32bits
 -- Compiling module mux_2to1
@@ -22,5 +15,12 @@ Model Technology ModelSim SE vlog 6.5 Compiler 2009.01 Jan 22 2009
 
 Top level modules:
 	adder_32bits
+
+} {} {}} E:/Verilog/lab28/PipelineCPU/32bits_MIPS_CPU/SIM/ALU/ALU_tb.v {1 {vlog -work work -novopt -nocovercells E:/Verilog/lab28/PipelineCPU/32bits_MIPS_CPU/SIM/ALU/ALU_tb.v
+Model Technology ModelSim SE vlog 6.5 Compiler 2009.01 Jan 22 2009
+-- Compiling module ALU_tb_v
+
+Top level modules:
+	ALU_tb_v
 
 } {} {}}

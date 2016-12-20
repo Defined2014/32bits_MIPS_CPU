@@ -66,7 +66,6 @@ module ALU (
    parameter	 alu_sltu= 5'b10100;
    
    
-   
 	always @(*) begin
 	  if(Binvert===0)
 	    add_B=B;
@@ -92,7 +91,7 @@ module ALU (
       alu_bltz: overflow=A[31];
 		  alu_sll: Result=B<<A;
 		  alu_srl: Result=B>>A;
-		  alu_sra: Result=B>>>A;
+		  alu_sra: Result=B_reg>>>A;
 		  alu_slt: Result=(A[31]&&(~B[31]))||((A[31]~^B[31])&&sum[31]);
 		  alu_sltu: Result=((~A[31])&&B[31])||((A[31]~^B[31])&&sum[31]);
 		  default: 
@@ -111,12 +110,14 @@ module ALU (
 //******************************************************************************		
 endmodule
 
-module select_Binvert(
-  ALUCode,
-  Binvert
-);
-  input [4:0] ALUCode;
-  output Binvert;
-  parameter	 alu_add=  5'b00000;
-  assign Binvert=~(ALUCode==alu_add);
-endmodule
+
+
+
+
+
+
+
+
+
+
+

@@ -39,7 +39,7 @@ module ID(clk,Instruction_id, NextPC_id, RegWrite_wb, RegWriteAddr_wb, RegWriteD
     output ALUSrcB_id;
     output RegDst_id;
     output Stall;
-    output Z;
+    output reg Z;
     output J;
     output JR;
     output PC_IFWrite;
@@ -62,33 +62,48 @@ module ID(clk,Instruction_id, NextPC_id, RegWrite_wb, RegWriteAddr_wb, RegWriteD
 	 assign RsAddr_id=Instruction_id[25:21];
 
 	 assign Sa_id  = {27'b0,Instruction_id[10:6]};
-   	 assign Imm_id={{16{Instruction_id[15]}},Instruction_id[15:0]};
+	 assign Imm_id={{16{Instruction_id[15]}},Instruction_id[15:0]};
 	 
 //JumpAddress
-
+   assign JumpAddr={NextPC_id[31:28],Instruction_id[25:0],2'b00}; 
 
    
 //BranchAddrress 
-
+   wire ci,co;
+   assign ci=0;
+   adder_32bits add(.a(NextPC_id),.b(Imm_id<<2),.ci(ci),.s(BranchAddr),.co(co));
 
 
 //JrAddress
-
+   assign JrAddr = {NextPC_id[31:28],Instruction_id[25:0],2'b00};
 
 
 //Zero test
-
-
-    
-	 
-//Hazard detectior   
-	parameter	 alu_beq=  5'b01010;
+   parameter	 alu_beq=  5'b01010;
    parameter	 alu_bne=  5'b01011;
-	parameter	 alu_bgez= 5'b01100;
+	 parameter	 alu_bgez= 5'b01100;
    parameter	 alu_bgtz= 5'b01101;
    parameter	 alu_blez= 5'b01110;
    parameter	 alu_bltz= 5'b01111;
 
+  always @(posedge clk) begin
+    case(ALUCode_id)
+      alu_beq: Z=&(RsData_id[31:0]~^RtData_id[31:0]);
+      alu_bne: Z=|(RsData_id[31:0]^RtData_id[31:0]);
+      alu_bgez: Z=~RsData_id[31];
+      alu_bgtz: Z=~RsData_id[31]&&(|RsData_id[31:0]);
+      alu_bltz: Z=RsData_id[31];
+      alu_blez: Z=RsData_id[31] || ~(|RsData_id[31:0]);
+      default: Z=0;
+    endcase
+  end
+
+    
+	 
+//Hazard detectior   
+	 
+   assign Stall = MemRead_ex && ( (RegWriteAddr_ex == RsAddr_id)|| (RegWriteAddr_ex == RtAddr_id));
+   assign PC_IFWrite = ~Stall;
 	
 		
 
@@ -114,7 +129,7 @@ module ID(clk,Instruction_id, NextPC_id, RegWrite_wb, RegWriteAddr_wb, RegWriteD
    //MultiRegisters inst
    wire [31:0] RsData_temp,RtData_temp;
 	
-	MultiRegisters   MultiRegisters(
+	Registers   Registers(
 	// Outputs
 	.RsData(RsData_temp), 
 	.RtData(RtData_temp), 
@@ -129,15 +144,14 @@ module ID(clk,Instruction_id, NextPC_id, RegWrite_wb, RegWriteAddr_wb, RegWriteD
 
 	 
 	//RsSel & RtSel
-
+  assign RsSel=RegWrite_wb&&(~(RegWriteAddr_wb==0))&&(RegWriteAddr_wb==RsAddr_id);
+  assign RtSel=RegWrite_wb&&(~(RegWriteAddr_wb==0))&&(RegWriteAddr_wb==RtAddr_id);
 
 
 
    //MUX for RsData_id  &  MUX for RtData_id
-	
-	
-	
-	
+   assign RsData_id=RsSel?RegWriteData_wb:RsData_temp;
+   assign RtData_id=RtSel?RegWriteData_wb:RtData_temp;
    
 
 endmodule

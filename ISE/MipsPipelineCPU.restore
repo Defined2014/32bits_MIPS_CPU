@@ -843,13 +843,23 @@ proc restore { { project_dir "" } } {
       "../SRC/IF.v" 
       "../SRC/InstructionROM.v" 
       "../SRC/MipsPipelineCPU.v" 
-      "../SRC/MultiRegisters.v"}
+      "../SRC/Registers.v" 
+      "../SRC/adder_32bits.v" 
+      "../SRC/select_binvert.v" 
+      "DataRAM.xco"}
 
   HandleException {
     AddUserFiles $iProjHelper $user_files
   } "A problem occured while restoring user files."
 
-  set imported_files {}
+  set imported_files { 
+      "DataRAM.asy" 
+      "DataRAM.ngc" 
+      "DataRAM.sym" 
+      "DataRAM.v" 
+      "DataRAM.veo" 
+      "DataRAM.vhd" 
+      "DataRAM.vho"}
 
   set origination 2
 
@@ -875,6 +885,7 @@ proc restore { { project_dir "" } } {
       "A" "" "" "" "PROP_CompxlibOverwriteLib" "Overwrite" 
       "A" "" "" "" "PROP_CompxlibSimPrimatives" "true" 
       "A" "" "" "" "PROP_CompxlibXlnxCoreLib" "true" 
+      "A" "" "" "" "PROP_CorgenRegenCore" "Under Current Project Setting" 
       "A" "" "" "" "PROP_CurrentFloorplanFile" "" 
       "A" "" "" "" "PROP_DesignName" "MipsPipelineCPU" 
       "A" "" "" "" "PROP_Dummy" "dum1" 
@@ -1209,6 +1220,7 @@ proc restore { { project_dir "" } } {
       "E" "" "" "" "PROP_PreferredLanguage" "Verilog" 
       "F" "" "" "" "PROP_ChangeDevSpeed" "-7" 
       "F" "" "" "" "PROP_SimModelTarget" "Verilog" 
+      "F" "" "" "" "PROP_coregenFuncModelTargetLang" "Verilog" 
       "F" "" "" "" "PROP_tbwTestbenchTargetLang" "Verilog" 
       "F" "" "" "" "PROP_xilxPostTrceSpeed" "-7" 
       "F" "" "" "" "PROP_xilxPreTrceSpeed" "-7" 

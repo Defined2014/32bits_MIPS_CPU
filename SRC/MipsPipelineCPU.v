@@ -59,7 +59,8 @@ module MipsPipelineCPU(clk, reset, JumpFlag, Instruction_id, ALU_A,
 	 .NextPC_if(NextPC_if));
  
 //   IF->ID Register
-
+  dffre #(32) dffre1( .d(Instruction_if), .en(PC_IFWrite), .r(IF_flush|reset), .clk(clk),.q(Instruction_id)); 
+  dffre #(32) dffre2( .d(NextPC_if), .en(PC_IFWrite), .r(IF_flush|reset), .clk(clk), .q(NextPC_id)); 
 
 
      
