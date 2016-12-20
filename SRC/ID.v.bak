@@ -70,12 +70,11 @@ module ID(clk,Instruction_id, NextPC_id, RegWrite_wb, RegWriteAddr_wb, RegWriteD
    
 //BranchAddrress 
    wire ci,co;
-   assign ci=0;
    adder_32bits add(.a(NextPC_id),.b(Imm_id<<2),.ci(ci),.s(BranchAddr),.co(co));
 
 
 //JrAddress
-   assign JrAddr = RsData_id;
+   assign JrAddr = {NextPC_id[31:28],Instruction_id[25:0],2'b00};
 
 
 //Zero test
@@ -88,13 +87,13 @@ module ID(clk,Instruction_id, NextPC_id, RegWrite_wb, RegWriteAddr_wb, RegWriteD
 
   always @(posedge clk) begin
     case(ALUCode_id)
-      alu_beq: Z<=&(RsData_id[31:0]~^RtData_id[31:0]);
-      alu_bne: Z<=|(RsData_id[31:0]^RtData_id[31:0]);
-      alu_bgez: Z<=~RsData_id[31];
-      alu_bgtz: Z<=~RsData_id[31]&&(|RsData_id[31:0]);
-      alu_bltz: Z<=RsData_id[31];
-      alu_blez: Z<=RsData_id[31] || ~(|RsData_id[31:0]);
-      default: Z<=0;
+      alu_beq: Z=&(RsData_id[31:0]~^RtData_id[31:0]);
+      alu_bne: Z=|(RsData_id[31:0]^RtData_id[31:0]);
+      alu_bgez: Z=~RsData_id[31];
+      alu_bgtz: Z=~RsData_id[31]&&(|RsData_id[31:0]);
+      alu_bltz: Z=RsData_id[31];
+      alu_blez: Z=RsData_id[31] || ~(|RsData_id[31:0]);
+      default: Z=0;
     endcase
   end
 

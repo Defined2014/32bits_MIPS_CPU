@@ -69,7 +69,6 @@ module EX(RegDst_ex, ALUCode_ex, ALUSrcA_ex, ALUSrcB_ex, Imm_ex, Sa_ex, RsAddr_e
     else B=31'b0;
   end
 
-
 //MUX for ALU_A
   assign ALU_A= ALUSrcA_ex ? Sa_ex : A ;
 
@@ -92,7 +91,6 @@ module EX(RegDst_ex, ALUCode_ex, ALUSrcA_ex, ALUSrcB_ex, Imm_ex, Sa_ex, RsAddr_e
 	 
 //MUX for RegWriteAddr_ex
   assign RegWriteAddr_ex= RegDst_ex ? RdAddr_ex : RtAddr_ex;
-  assign MemWriteData_ex= B;
 
 
 

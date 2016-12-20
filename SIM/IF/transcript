@@ -1,0 +1,212 @@
+# Reading D:/modeltech_6.5/tcl/vsim/pref.tcl 
+# //  ModelSim SE 6.5 Jan 22 2009 
+# //
+# //  Copyright 1991-2009 Mentor Graphics Corporation
+# //              All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND 
+# //  PROPRIETARY INFORMATION WHICH IS THE PROPERTY
+# //  OF MENTOR GRAPHICS CORPORATION OR ITS LICENSORS
+# //  AND IS SUBJECT TO LICENSE TERMS.
+# //
+# OpenFile E:/Verilog/lab28/PipelineCPU/32bits_MIPS_CPU/SIM/IF/IF_tb.v 
+# Loading project IF
+# Compile of IF.v failed with 1 errors.
+# Compile of InstructionROM.v was successful.
+# Compile of IF_tb.v was successful.
+# 3 compiles, 1 failed with 1 error. 
+# Compile of IF.v failed with 1 errors.
+# Compile of InstructionROM.v was successful.
+# Compile of IF_tb.v was successful.
+# 3 compiles, 1 failed with 1 error. 
+# Compile of IF.v failed with 1 errors.
+# Compile of InstructionROM.v was successful.
+# Compile of IF_tb.v was successful.
+# 3 compiles, 1 failed with 1 error. 
+# Compile of IF.v failed with 1 errors.
+# Compile of InstructionROM.v was successful.
+# Compile of IF_tb.v was successful.
+# 3 compiles, 1 failed with 1 error. 
+# Compile of IF.v failed with 1 errors.
+# Compile of InstructionROM.v was successful.
+# Compile of IF_tb.v was successful.
+# 3 compiles, 1 failed with 1 error. 
+# Compile of IF.v failed with 1 errors.
+# Compile of InstructionROM.v was successful.
+# Compile of IF_tb.v was successful.
+# 3 compiles, 1 failed with 1 error. 
+# Compile of IF.v was successful.
+# Compile of InstructionROM.v was successful.
+# Compile of IF_tb.v was successful.
+# 3 compiles, 0 failed with no errors. 
+vsim -gui -novopt work.IF_tb_v
+# vsim -gui -novopt work.IF_tb_v 
+# Refreshing E:\Verilog\lab28\PipelineCPU\32bits_MIPS_CPU\SIM\IF\work.IF_tb_v
+# Loading work.IF_tb_v
+# Refreshing E:\Verilog\lab28\PipelineCPU\32bits_MIPS_CPU\SIM\IF\work.IF
+# Loading work.IF
+# Refreshing E:\Verilog\lab28\PipelineCPU\32bits_MIPS_CPU\SIM\IF\work.InstructionROM
+# Loading work.InstructionROM
+# ** Warning: (vsim-3009) [TSCALE] - Module 'InstructionROM' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /IF_tb_v/uut/InstructionROM
+add wave sim:/IF_tb_v/*
+run -all
+# Break in Module IF_tb_v at E:/Verilog/lab28/PipelineCPU/32bits_MIPS_CPU/SIM/IF/IF_tb.v line 77
+quit -sim
+# Compile of IF.v failed with 1 errors.
+# Compile of InstructionROM.v was successful.
+# Compile of IF_tb.v was successful.
+# Compile of adder_32bits.v was successful.
+# 4 compiles, 1 failed with 1 error. 
+# Compile of IF.v was successful.
+# Compile of InstructionROM.v was successful.
+# Compile of IF_tb.v was successful.
+# Compile of adder_32bits.v was successful.
+# 4 compiles, 0 failed with no errors. 
+vsim -gui -novopt work.IF_tb_v
+# vsim -gui -novopt work.IF_tb_v 
+# Refreshing E:\Verilog\lab28\PipelineCPU\32bits_MIPS_CPU\SIM\IF\work.IF_tb_v
+# Loading work.IF_tb_v
+# Refreshing E:\Verilog\lab28\PipelineCPU\32bits_MIPS_CPU\SIM\IF\work.IF
+# Loading work.IF
+# ** Error: (vsim-3037) E:/Verilog/lab28/PipelineCPU/32bits_MIPS_CPU/SRC/IF.v(56): Missing instance name in instantiation of 'adder_32bits'.
+#         Region: /IF_tb_v/uut
+# Refreshing E:\Verilog\lab28\PipelineCPU\32bits_MIPS_CPU\SIM\IF\work.InstructionROM
+# Loading work.InstructionROM
+# ** Warning: (vsim-3009) [TSCALE] - Module 'InstructionROM' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /IF_tb_v/uut/InstructionROM
+# Error loading design
+# Load canceled
+# Compile of IF.v was successful.
+# Compile of InstructionROM.v was successful.
+# Compile of IF_tb.v was successful.
+# Compile of adder_32bits.v was successful.
+# 4 compiles, 0 failed with no errors. 
+vsim -gui -novopt work.IF_tb_v
+# vsim -gui -novopt work.IF_tb_v 
+# Refreshing E:\Verilog\lab28\PipelineCPU\32bits_MIPS_CPU\SIM\IF\work.IF_tb_v
+# Loading work.IF_tb_v
+# Refreshing E:\Verilog\lab28\PipelineCPU\32bits_MIPS_CPU\SIM\IF\work.IF
+# Loading work.IF
+# Refreshing E:\Verilog\lab28\PipelineCPU\32bits_MIPS_CPU\SIM\IF\work.adder_32bits
+# Loading work.adder_32bits
+# Refreshing E:\Verilog\lab28\PipelineCPU\32bits_MIPS_CPU\SIM\IF\work.adder_4bits
+# Loading work.adder_4bits
+# Refreshing E:\Verilog\lab28\PipelineCPU\32bits_MIPS_CPU\SIM\IF\work.adder_select
+# Loading work.adder_select
+# Refreshing E:\Verilog\lab28\PipelineCPU\32bits_MIPS_CPU\SIM\IF\work.mux_2to1
+# Loading work.mux_2to1
+# Refreshing E:\Verilog\lab28\PipelineCPU\32bits_MIPS_CPU\SIM\IF\work.InstructionROM
+# Loading work.InstructionROM
+# ** Warning: (vsim-3009) [TSCALE] - Module 'InstructionROM' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /IF_tb_v/uut/InstructionROM
+# ** Warning: (vsim-3015) E:/Verilog/lab28/PipelineCPU/32bits_MIPS_CPU/SRC/IF.v(56): [PCDPC] - Port size (1 or 1) does not match connection size (32) for port 'ci'.
+#         Region: /IF_tb_v/uut/add
+# ** Error: (vsim-3053) E:/Verilog/lab28/PipelineCPU/32bits_MIPS_CPU/SRC/IF.v(56): Illegal output or inout port connection (port 'co').
+#         Region: /IF_tb_v/uut/add
+# ** Warning: (vsim-3015) E:/Verilog/lab28/PipelineCPU/32bits_MIPS_CPU/SRC/IF.v(56): [PCDPC] - Port size (1 or 1) does not match connection size (32) for port 'co'.
+#         Region: /IF_tb_v/uut/add
+# Error loading design
+# Compile of IF.v was successful.
+# Compile of InstructionROM.v was successful.
+# Compile of IF_tb.v was successful.
+# Compile of adder_32bits.v was successful.
+# 4 compiles, 0 failed with no errors. 
+vsim -gui -novopt work.IF_tb_v
+# vsim -gui -novopt work.IF_tb_v 
+# Refreshing E:\Verilog\lab28\PipelineCPU\32bits_MIPS_CPU\SIM\IF\work.IF_tb_v
+# Loading work.IF_tb_v
+# Refreshing E:\Verilog\lab28\PipelineCPU\32bits_MIPS_CPU\SIM\IF\work.IF
+# Loading work.IF
+# Refreshing E:\Verilog\lab28\PipelineCPU\32bits_MIPS_CPU\SIM\IF\work.adder_32bits
+# Loading work.adder_32bits
+# Refreshing E:\Verilog\lab28\PipelineCPU\32bits_MIPS_CPU\SIM\IF\work.adder_4bits
+# Loading work.adder_4bits
+# Refreshing E:\Verilog\lab28\PipelineCPU\32bits_MIPS_CPU\SIM\IF\work.adder_select
+# Loading work.adder_select
+# Refreshing E:\Verilog\lab28\PipelineCPU\32bits_MIPS_CPU\SIM\IF\work.mux_2to1
+# Loading work.mux_2to1
+# Refreshing E:\Verilog\lab28\PipelineCPU\32bits_MIPS_CPU\SIM\IF\work.InstructionROM
+# Loading work.InstructionROM
+# ** Warning: (vsim-3009) [TSCALE] - Module 'InstructionROM' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /IF_tb_v/uut/InstructionROM
+add wave sim:/IF_tb_v/*
+# Load canceled
+run -all
+# Break in Module IF_tb_v at E:/Verilog/lab28/PipelineCPU/32bits_MIPS_CPU/SIM/IF/IF_tb.v line 77
+quit -sim
+# Compile of IF.v was successful.
+# Compile of InstructionROM.v was successful.
+# Compile of IF_tb.v was successful.
+# Compile of adder_32bits.v was successful.
+# 4 compiles, 0 failed with no errors. 
+vsim -gui -novopt work.IF_tb_v
+# vsim -gui -novopt work.IF_tb_v 
+# Refreshing E:\Verilog\lab28\PipelineCPU\32bits_MIPS_CPU\SIM\IF\work.IF_tb_v
+# Loading work.IF_tb_v
+# Refreshing E:\Verilog\lab28\PipelineCPU\32bits_MIPS_CPU\SIM\IF\work.IF
+# Loading work.IF
+# Refreshing E:\Verilog\lab28\PipelineCPU\32bits_MIPS_CPU\SIM\IF\work.adder_32bits
+# Loading work.adder_32bits
+# Refreshing E:\Verilog\lab28\PipelineCPU\32bits_MIPS_CPU\SIM\IF\work.adder_4bits
+# Loading work.adder_4bits
+# Refreshing E:\Verilog\lab28\PipelineCPU\32bits_MIPS_CPU\SIM\IF\work.adder_select
+# Loading work.adder_select
+# Refreshing E:\Verilog\lab28\PipelineCPU\32bits_MIPS_CPU\SIM\IF\work.mux_2to1
+# Loading work.mux_2to1
+# Refreshing E:\Verilog\lab28\PipelineCPU\32bits_MIPS_CPU\SIM\IF\work.InstructionROM
+# Loading work.InstructionROM
+# ** Warning: (vsim-3009) [TSCALE] - Module 'InstructionROM' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /IF_tb_v/uut/InstructionROM
+add wave sim:/IF_tb_v/*
+# Load canceled
+run -all
+# Break in Module IF_tb_v at E:/Verilog/lab28/PipelineCPU/32bits_MIPS_CPU/SIM/IF/IF_tb.v line 77
+quit -sim
+# Compile of IF.v failed with 1 errors.
+# Compile of InstructionROM.v was successful.
+# Compile of IF_tb.v was successful.
+# Compile of adder_32bits.v was successful.
+# 4 compiles, 1 failed with 1 error. 
+# Compile of IF.v failed with 1 errors.
+# Compile of InstructionROM.v was successful.
+# Compile of IF_tb.v was successful.
+# Compile of adder_32bits.v was successful.
+# 4 compiles, 1 failed with 1 error. 
+# Compile of IF.v failed with 1 errors.
+# Compile of InstructionROM.v was successful.
+# Compile of IF_tb.v was successful.
+# Compile of adder_32bits.v was successful.
+# 4 compiles, 1 failed with 1 error. 
+# Compile of IF.v failed with 1 errors.
+# Compile of InstructionROM.v was successful.
+# Compile of IF_tb.v was successful.
+# Compile of adder_32bits.v was successful.
+# 4 compiles, 1 failed with 1 error. 
+# Compile of IF.v was successful.
+# Compile of InstructionROM.v was successful.
+# Compile of IF_tb.v was successful.
+# Compile of adder_32bits.v was successful.
+# 4 compiles, 0 failed with no errors. 
+vsim -gui -novopt work.IF_tb_v
+# vsim -gui -novopt work.IF_tb_v 
+# Refreshing E:\Verilog\lab28\PipelineCPU\32bits_MIPS_CPU\SIM\IF\work.IF_tb_v
+# Loading work.IF_tb_v
+# Refreshing E:\Verilog\lab28\PipelineCPU\32bits_MIPS_CPU\SIM\IF\work.IF
+# Loading work.IF
+# Refreshing E:\Verilog\lab28\PipelineCPU\32bits_MIPS_CPU\SIM\IF\work.adder_32bits
+# Loading work.adder_32bits
+# Refreshing E:\Verilog\lab28\PipelineCPU\32bits_MIPS_CPU\SIM\IF\work.adder_4bits
+# Loading work.adder_4bits
+# Refreshing E:\Verilog\lab28\PipelineCPU\32bits_MIPS_CPU\SIM\IF\work.adder_select
+# Loading work.adder_select
+# Refreshing E:\Verilog\lab28\PipelineCPU\32bits_MIPS_CPU\SIM\IF\work.mux_2to1
+# Loading work.mux_2to1
+# Refreshing E:\Verilog\lab28\PipelineCPU\32bits_MIPS_CPU\SIM\IF\work.InstructionROM
+# Loading work.InstructionROM
+# ** Warning: (vsim-3009) [TSCALE] - Module 'InstructionROM' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /IF_tb_v/uut/InstructionROM
+add wave sim:/IF_tb_v/*
+run -all
+# Break in Module IF_tb_v at E:/Verilog/lab28/PipelineCPU/32bits_MIPS_CPU/SIM/IF/IF_tb.v line 77
+quit -sim

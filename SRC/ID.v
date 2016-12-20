@@ -75,7 +75,7 @@ module ID(clk,Instruction_id, NextPC_id, RegWrite_wb, RegWriteAddr_wb, RegWriteD
 
 
 //JrAddress
-   assign JrAddr = RsData_id;
+   assign JrAddr = {NextPC_id[31:28],Instruction_id[25:0],2'b00};
 
 
 //Zero test
@@ -86,15 +86,15 @@ module ID(clk,Instruction_id, NextPC_id, RegWrite_wb, RegWriteAddr_wb, RegWriteD
    parameter	 alu_blez= 5'b01110;
    parameter	 alu_bltz= 5'b01111;
 
-  always @(*) begin
+  always @(posedge clk) begin
     case(ALUCode_id)
-      alu_beq: Z<=&(RsData_id[31:0]~^RtData_id[31:0]);
-      alu_bne: Z<=|(RsData_id[31:0]^RtData_id[31:0]);
-      alu_bgez: Z<=~RsData_id[31];
-      alu_bgtz: Z<=~RsData_id[31]&&(|RsData_id[31:0]);
-      alu_bltz: Z<=RsData_id[31];
-      alu_blez: Z<=RsData_id[31] || ~(|RsData_id[31:0]);
-      default: Z<=0;
+      alu_beq: Z=&(RsData_id[31:0]~^RtData_id[31:0]);
+      alu_bne: Z=|(RsData_id[31:0]^RtData_id[31:0]);
+      alu_bgez: Z=~RsData_id[31];
+      alu_bgtz: Z=~RsData_id[31]&&(|RsData_id[31:0]);
+      alu_bltz: Z=RsData_id[31];
+      alu_blez: Z=RsData_id[31] || ~(|RsData_id[31:0]);
+      default: Z=0;
     endcase
   end
 

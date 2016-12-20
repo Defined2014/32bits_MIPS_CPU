@@ -56,6 +56,13 @@ module ALU_tb_v;
 		#100 ALUCode = 5'd6;	A = 32'hFF0C0E10;	B = 32'hFFFFE0FF;//andi
 		#100 ALUCode = 5'd7;	A = 32'hFF0C0E10;	B = 32'hFFFFE0FF;//xori
 		#100 ALUCode = 5'd8;	A = 32'hFF0C0E10;	B = 32'hFFFFE0FF;//ori
+		
+		#100 ALUCode = 5'd10; A = 32'hFFFFFFFF; B = 32'hFFFFFFFF;//beq
+		#100 ALUCode = 5'd11; A = 32'hFFFFFFFF; B = 32'hFFFFFFFF;//bne
+		#100 ALUCode = 5'd12; A = 32'hF0000000; B = 32'hFFFFFFFF;//bgez
+		#100 ALUCode = 5'd13; A = 32'h00000000; B = 32'hFFFFFFFF;//bgtz
+    #100 ALUCode = 5'd14; A = 32'hFFFFFFFF; B = 32'hFFFFFFFF;//blez
+		#100 ALUCode = 5'd15; A = 32'hFFFFFFFF; B = 32'hFFFFFFFF;//bltz;
 				
 		#100 ALUCode = 5'd16;A = 32'h00000004;	B = 32'hFFFFE0FF;//sll
 		#100 ALUCode = 5'd17;A = 32'h00000004;	B = 32'hFFFFE0FF;//srl
