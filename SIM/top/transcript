@@ -1,0 +1,326 @@
+# Reading D:/modeltech_6.5/tcl/vsim/pref.tcl 
+# //  ModelSim SE 6.5 Jan 22 2009 
+# //
+# //  Copyright 1991-2009 Mentor Graphics Corporation
+# //              All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND 
+# //  PROPRIETARY INFORMATION WHICH IS THE PROPERTY
+# //  OF MENTOR GRAPHICS CORPORATION OR ITS LICENSORS
+# //  AND IS SUBJECT TO LICENSE TERMS.
+# //
+# OpenFile E:/Verilog/lab28/PipelineCPU/32bits_MIPS_CPU/SIM/top/top.mpf 
+# Loading project top
+# Compile of top_tb.v was successful.
+# Compile of adder_32bits.v was successful.
+# Compile of ALU.v was successful.
+# Compile of Decode.v was successful.
+# Compile of EX.v was successful.
+# Compile of ff_lib.v was successful.
+# Compile of ID.v was successful.
+# Compile of IF.v was successful.
+# Compile of InstructionROM.v was successful.
+# Compile of MipsPipelineCPU.v was successful.
+# Compile of Registers.v was successful.
+# Compile of select_binvert.v was successful.
+# Compile of DataRAM.v was successful.
+# 13 compiles, 0 failed with no errors. 
+vsim -L SIMPRIMS_VER -L UNISIMS_VER -L XILINXCORELIB_VER -vopt -voptargs=+acc work.top_tb_v
+# vsim -L SIMPRIMS_VER -L UNISIMS_VER -L XILINXCORELIB_VER -vopt -voptargs=+acc work.top_tb_v 
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.top_tb_v(fast)
+# Loading work.MipsPipelineCPU(fast)
+# Loading work.IF(fast)
+# Loading work.adder_32bits(fast)
+# Loading work.adder_4bits(fast)
+# Loading work.adder_select(fast)
+# Loading work.mux_2to1(fast)
+# Loading work.InstructionROM(fast)
+# ** Warning: (vsim-3009) [TSCALE] - Module 'InstructionROM' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /top_tb_v/uut/IF/InstructionROM
+# Loading work.dffre(fast)
+# ** Warning: (vsim-3009) [TSCALE] - Module 'dffre' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /top_tb_v/uut/dffre1
+# Loading work.ID(fast)
+# Loading work.Decode(fast)
+# ** Warning: (vsim-3009) [TSCALE] - Module 'Decode' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /top_tb_v/uut/ID/Decode
+# Loading work.Registers(fast)
+# ** Warning: (vsim-3009) [TSCALE] - Module 'Registers' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /top_tb_v/uut/ID/Registers
+# Loading work.dffr(fast)
+# ** Warning: (vsim-3009) [TSCALE] - Module 'dffr' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /top_tb_v/uut/WB_I_E
+# Loading work.dffr(fast__1)
+# ** Warning: (vsim-3009) [TSCALE] - Module 'dffr' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /top_tb_v/uut/EX_I_E
+# Loading work.dffr(fast__2)
+# ** Warning: (vsim-3009) [TSCALE] - Module 'dffr' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /top_tb_v/uut/Data_Sa
+# Loading work.dffr(fast__3)
+# ** Warning: (vsim-3009) [TSCALE] - Module 'dffr' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /top_tb_v/uut/Data_I_E
+# Loading work.EX(fast)
+# Loading work.ALU(fast)
+# ** Warning: (vsim-3009) [TSCALE] - Module 'ALU' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /top_tb_v/uut/EX/ALU
+# Loading work.select_Binvert(fast)
+# ** Warning: (vsim-3009) [TSCALE] - Module 'select_Binvert' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /top_tb_v/uut/EX/ALU/select_binvert
+# Loading work.dffr(fast__4)
+# ** Warning: (vsim-3009) [TSCALE] - Module 'dffr' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /top_tb_v/uut/M_E_M
+# Loading work.dffr(fast__5)
+# ** Warning: (vsim-3009) [TSCALE] - Module 'dffr' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /top_tb_v/uut/dffr_RegWrite
+# Loading work.DataRAM(fast)
+# Loading XILINXCORELIB_VER.BLKMEMSP_V6_2(fast)
+add wave sim:/top_tb_v/*
+add wave sim:/top_tb_v/uut/EX/*
+run -all
+# Break in Module top_tb_v at E:/Verilog/lab28/PipelineCPU/32bits_MIPS_CPU/SIM/top/top_tb.v line 63
+# Compile of top_tb.v was successful.
+# Compile of adder_32bits.v was successful.
+# Compile of ALU.v was successful.
+# Compile of Decode.v was successful.
+# Compile of EX.v was successful.
+# Compile of ff_lib.v was successful.
+# Compile of ID.v was successful.
+# Compile of IF.v was successful.
+# Compile of InstructionROM.v was successful.
+# Compile of MipsPipelineCPU.v was successful.
+# Compile of Registers.v was successful.
+# Compile of select_binvert.v was successful.
+# Compile of DataRAM.v was successful.
+# 13 compiles, 0 failed with no errors. 
+quit -sim
+# Load canceled
+vsim -L SIMPRIMS_VER -L UNISIMS_VER -L XILINXCORELIB_VER -vopt -voptargs=+acc work.top_tb_v
+# vsim -L SIMPRIMS_VER -L UNISIMS_VER -L XILINXCORELIB_VER -vopt -voptargs=+acc work.top_tb_v 
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.top_tb_v(fast)
+# Loading work.MipsPipelineCPU(fast)
+# Loading work.IF(fast)
+# Loading work.adder_32bits(fast)
+# Loading work.adder_4bits(fast)
+# Loading work.adder_select(fast)
+# Loading work.mux_2to1(fast)
+# Loading work.InstructionROM(fast)
+# ** Warning: (vsim-3009) [TSCALE] - Module 'InstructionROM' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /top_tb_v/uut/IF/InstructionROM
+# Loading work.dffre(fast)
+# ** Warning: (vsim-3009) [TSCALE] - Module 'dffre' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /top_tb_v/uut/dffre1
+# Loading work.ID(fast)
+# Loading work.Decode(fast)
+# ** Warning: (vsim-3009) [TSCALE] - Module 'Decode' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /top_tb_v/uut/ID/Decode
+# Loading work.Registers(fast)
+# ** Warning: (vsim-3009) [TSCALE] - Module 'Registers' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /top_tb_v/uut/ID/Registers
+# Loading work.dffr(fast)
+# ** Warning: (vsim-3009) [TSCALE] - Module 'dffr' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /top_tb_v/uut/WB_I_E
+# Loading work.dffr(fast__1)
+# ** Warning: (vsim-3009) [TSCALE] - Module 'dffr' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /top_tb_v/uut/EX_I_E
+# Loading work.dffr(fast__2)
+# ** Warning: (vsim-3009) [TSCALE] - Module 'dffr' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /top_tb_v/uut/Data_Sa
+# Loading work.dffr(fast__3)
+# ** Warning: (vsim-3009) [TSCALE] - Module 'dffr' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /top_tb_v/uut/Data_I_E
+# Loading work.EX(fast)
+# Loading work.ALU(fast)
+# ** Warning: (vsim-3009) [TSCALE] - Module 'ALU' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /top_tb_v/uut/EX/ALU
+# Loading work.select_Binvert(fast)
+# ** Warning: (vsim-3009) [TSCALE] - Module 'select_Binvert' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /top_tb_v/uut/EX/ALU/select_binvert
+# Loading work.dffr(fast__4)
+# ** Warning: (vsim-3009) [TSCALE] - Module 'dffr' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /top_tb_v/uut/M_E_M
+# Loading work.dffr(fast__5)
+# ** Warning: (vsim-3009) [TSCALE] - Module 'dffr' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /top_tb_v/uut/dffr_RegWrite
+# Loading work.DataRAM(fast)
+# Loading XILINXCORELIB_VER.BLKMEMSP_V6_2(fast)
+add wave sim:/top_tb_v/*
+add wave sim:/top_tb_v/uut/EX/*
+run -all
+# Break in Module top_tb_v at E:/Verilog/lab28/PipelineCPU/32bits_MIPS_CPU/SIM/top/top_tb.v line 63
+quit -sim
+vsim -L SIMPRIMS_VER -L UNISIMS_VER -L XILINXCORELIB_VER -vopt -voptargs=+acc work.top_tb_v
+# vsim -L SIMPRIMS_VER -L UNISIMS_VER -L XILINXCORELIB_VER -vopt -voptargs=+acc work.top_tb_v 
+# Loading work.top_tb_v(fast)
+# Loading work.MipsPipelineCPU(fast)
+# Loading work.IF(fast)
+# Loading work.adder_32bits(fast)
+# Loading work.adder_4bits(fast)
+# Loading work.adder_select(fast)
+# Loading work.mux_2to1(fast)
+# Loading work.InstructionROM(fast)
+# ** Warning: (vsim-3009) [TSCALE] - Module 'InstructionROM' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /top_tb_v/uut/IF/InstructionROM
+# Loading work.dffre(fast)
+# ** Warning: (vsim-3009) [TSCALE] - Module 'dffre' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /top_tb_v/uut/dffre1
+# Loading work.ID(fast)
+# Loading work.Decode(fast)
+# ** Warning: (vsim-3009) [TSCALE] - Module 'Decode' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /top_tb_v/uut/ID/Decode
+# Loading work.Registers(fast)
+# ** Warning: (vsim-3009) [TSCALE] - Module 'Registers' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /top_tb_v/uut/ID/Registers
+# Loading work.dffr(fast)
+# ** Warning: (vsim-3009) [TSCALE] - Module 'dffr' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /top_tb_v/uut/WB_I_E
+# Loading work.dffr(fast__1)
+# ** Warning: (vsim-3009) [TSCALE] - Module 'dffr' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /top_tb_v/uut/EX_I_E
+# Loading work.dffr(fast__2)
+# ** Warning: (vsim-3009) [TSCALE] - Module 'dffr' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /top_tb_v/uut/Data_Sa
+# Loading work.dffr(fast__3)
+# ** Warning: (vsim-3009) [TSCALE] - Module 'dffr' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /top_tb_v/uut/Data_I_E
+# Loading work.EX(fast)
+# Loading work.ALU(fast)
+# ** Warning: (vsim-3009) [TSCALE] - Module 'ALU' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /top_tb_v/uut/EX/ALU
+# Loading work.select_Binvert(fast)
+# ** Warning: (vsim-3009) [TSCALE] - Module 'select_Binvert' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /top_tb_v/uut/EX/ALU/select_binvert
+# Loading work.dffr(fast__4)
+# ** Warning: (vsim-3009) [TSCALE] - Module 'dffr' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /top_tb_v/uut/M_E_M
+# Loading work.dffr(fast__5)
+# ** Warning: (vsim-3009) [TSCALE] - Module 'dffr' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /top_tb_v/uut/dffr_RegWrite
+# Loading work.DataRAM(fast)
+# Loading XILINXCORELIB_VER.BLKMEMSP_V6_2(fast)
+add wave sim:/top_tb_v/uut/EX/*
+run -all
+# Break in Module top_tb_v at E:/Verilog/lab28/PipelineCPU/32bits_MIPS_CPU/SIM/top/top_tb.v line 63
+quit -sim
+# Compile of top_tb.v was successful.
+# Compile of adder_32bits.v was successful.
+# Compile of ALU.v was successful.
+# Compile of Decode.v was successful.
+# Compile of EX.v was successful.
+# Compile of ff_lib.v was successful.
+# Compile of ID.v was successful.
+# Compile of IF.v was successful.
+# Compile of InstructionROM.v was successful.
+# Compile of MipsPipelineCPU.v was successful.
+# Compile of Registers.v was successful.
+# Compile of select_binvert.v was successful.
+# Compile of DataRAM.v was successful.
+# 13 compiles, 0 failed with no errors. 
+vsim -L SIMPRIMS_VER -L UNISIMS_VER -L XILINXCORELIB_VER -vopt -voptargs=+acc work.top_tb_v
+# vsim -L SIMPRIMS_VER -L UNISIMS_VER -L XILINXCORELIB_VER -vopt -voptargs=+acc work.top_tb_v 
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.top_tb_v(fast)
+# Loading work.MipsPipelineCPU(fast)
+# Loading work.IF(fast)
+# Loading work.adder_32bits(fast)
+# Loading work.adder_4bits(fast)
+# Loading work.adder_select(fast)
+# Loading work.mux_2to1(fast)
+# Loading work.InstructionROM(fast)
+# ** Warning: (vsim-3009) [TSCALE] - Module 'InstructionROM' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /top_tb_v/uut/IF/InstructionROM
+# Loading work.dffre(fast)
+# ** Warning: (vsim-3009) [TSCALE] - Module 'dffre' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /top_tb_v/uut/dffre1
+# Loading work.ID(fast)
+# Loading work.Decode(fast)
+# ** Warning: (vsim-3009) [TSCALE] - Module 'Decode' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /top_tb_v/uut/ID/Decode
+# Loading work.Registers(fast)
+# ** Warning: (vsim-3009) [TSCALE] - Module 'Registers' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /top_tb_v/uut/ID/Registers
+# Loading work.dffr(fast)
+# ** Warning: (vsim-3009) [TSCALE] - Module 'dffr' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /top_tb_v/uut/WB_I_E
+# Loading work.dffr(fast__1)
+# ** Warning: (vsim-3009) [TSCALE] - Module 'dffr' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /top_tb_v/uut/EX_I_E
+# Loading work.dffr(fast__2)
+# ** Warning: (vsim-3009) [TSCALE] - Module 'dffr' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /top_tb_v/uut/Data_Sa
+# Loading work.dffr(fast__3)
+# ** Warning: (vsim-3009) [TSCALE] - Module 'dffr' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /top_tb_v/uut/Data_I_E
+# Loading work.EX(fast)
+# Loading work.ALU(fast)
+# ** Warning: (vsim-3009) [TSCALE] - Module 'ALU' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /top_tb_v/uut/EX/ALU
+# Loading work.select_Binvert(fast)
+# ** Warning: (vsim-3009) [TSCALE] - Module 'select_Binvert' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /top_tb_v/uut/EX/ALU/select_binvert
+# Loading work.dffr(fast__4)
+# ** Warning: (vsim-3009) [TSCALE] - Module 'dffr' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /top_tb_v/uut/M_E_M
+# Loading work.dffr(fast__5)
+# ** Warning: (vsim-3009) [TSCALE] - Module 'dffr' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /top_tb_v/uut/dffr_RegWrite
+# Loading work.DataRAM(fast)
+# Loading XILINXCORELIB_VER.BLKMEMSP_V6_2(fast)
+add wave sim:/top_tb_v/uut/EX/*
+run -all
+# Break in Module top_tb_v at E:/Verilog/lab28/PipelineCPU/32bits_MIPS_CPU/SIM/top/top_tb.v line 63
+quit -sim
+# Load canceled
+vsim -L SIMPRIMS_VER -L UNISIMS_VER -L XILINXCORELIB_VER -vopt -voptargs=+acc work.top_tb_v
+# vsim -L SIMPRIMS_VER -L UNISIMS_VER -L XILINXCORELIB_VER -vopt -voptargs=+acc work.top_tb_v 
+# Loading work.top_tb_v(fast)
+# Loading work.MipsPipelineCPU(fast)
+# Loading work.IF(fast)
+# Loading work.adder_32bits(fast)
+# Loading work.adder_4bits(fast)
+# Loading work.adder_select(fast)
+# Loading work.mux_2to1(fast)
+# Loading work.InstructionROM(fast)
+# ** Warning: (vsim-3009) [TSCALE] - Module 'InstructionROM' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /top_tb_v/uut/IF/InstructionROM
+# Loading work.dffre(fast)
+# ** Warning: (vsim-3009) [TSCALE] - Module 'dffre' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /top_tb_v/uut/dffre1
+# Loading work.ID(fast)
+# Loading work.Decode(fast)
+# ** Warning: (vsim-3009) [TSCALE] - Module 'Decode' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /top_tb_v/uut/ID/Decode
+# Loading work.Registers(fast)
+# ** Warning: (vsim-3009) [TSCALE] - Module 'Registers' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /top_tb_v/uut/ID/Registers
+# Loading work.dffr(fast)
+# ** Warning: (vsim-3009) [TSCALE] - Module 'dffr' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /top_tb_v/uut/WB_I_E
+# Loading work.dffr(fast__1)
+# ** Warning: (vsim-3009) [TSCALE] - Module 'dffr' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /top_tb_v/uut/EX_I_E
+# Loading work.dffr(fast__2)
+# ** Warning: (vsim-3009) [TSCALE] - Module 'dffr' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /top_tb_v/uut/Data_Sa
+# Loading work.dffr(fast__3)
+# ** Warning: (vsim-3009) [TSCALE] - Module 'dffr' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /top_tb_v/uut/Data_I_E
+# Loading work.EX(fast)
+# Loading work.ALU(fast)
+# ** Warning: (vsim-3009) [TSCALE] - Module 'ALU' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /top_tb_v/uut/EX/ALU
+# Loading work.select_Binvert(fast)
+# ** Warning: (vsim-3009) [TSCALE] - Module 'select_Binvert' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /top_tb_v/uut/EX/ALU/select_binvert
+# Loading work.dffr(fast__4)
+# ** Warning: (vsim-3009) [TSCALE] - Module 'dffr' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /top_tb_v/uut/M_E_M
+# Loading work.dffr(fast__5)
+# ** Warning: (vsim-3009) [TSCALE] - Module 'dffr' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /top_tb_v/uut/dffr_RegWrite
+# Loading work.DataRAM(fast)
+# Loading XILINXCORELIB_VER.BLKMEMSP_V6_2(fast)
+add wave sim:/top_tb_v/*
+run -all
+# Break in Module top_tb_v at E:/Verilog/lab28/PipelineCPU/32bits_MIPS_CPU/SIM/top/top_tb.v line 63

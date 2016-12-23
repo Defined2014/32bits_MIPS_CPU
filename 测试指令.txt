@@ -1,0 +1,14 @@
+dout=32'h0800000b  //         j later 
+dout=32'h20080042  //earlier: addi $t0,$0,42 
+dout=32'h20090004  //         addi $t1,$0,4 
+dout=32'h01095022  //         sub $t2,$t0,$t1  （操作B一阶相关，操作A二阶相关） 
+dout=32'h01485825  //         or $t3,$t2,$t0   （操作A一阶相关，操作B三阶相关） 
+dout=32'hac0b000c  //         sw $t3,0c($0)
+dout=32'h8d2c0008  //         lw $t4,08($t1) 
+dout=32'h000c4080  //         sll $t0,$t4,2     （数据冒险） 
+dout=32'h8d2b0008  //         lw $t3,08($t1)
+dout=32'h012a582b  //         sltu $t3,$t1,$t2 
+dout=32'h0800000a  //done:    j done 
+dout=32'h14000001  //later:   bne $0,$0,end    （分支条件不成立） 
+dout=32'h1000fff4  //         beq $0,$0,earlier   （分支条件成立） 
+dout=32'h00000000  //end:     nop
